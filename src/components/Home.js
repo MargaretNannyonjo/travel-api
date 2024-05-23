@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <>
       <div className="homePage">
-        <h1>SAFARI QUEST</h1>
-        <h6>
+        <h2>SAFARI QUEST</h2>
+        <h1>
           WHERE TASTE <br />
           MEETS <br />
           ADVENTURE
-        </h6>
+        </h1>
         <p>Taste the World, Explore the Flavours of Travel</p>
       </div>
 
