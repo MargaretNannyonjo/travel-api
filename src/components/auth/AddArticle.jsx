@@ -83,9 +83,15 @@ export default function AddArticle() {
       {!user ? (
         <div className="fixed">
           <h5>
-            <Link to="/login">Login </Link>to post a Blog
+            <Link to="/login" title="login">
+              Login
+            </Link>
+            to post a Blog
           </h5>
-          Don't have an account? <Link to="/register">Signup</Link>
+          Don't have an account?
+          <Link to="/register" title="register">
+            Signup
+          </Link>
         </div>
       ) : isVisible ? (
         <div className="fixed-bottom border p-3 bg-light addBlogArticle">
@@ -93,6 +99,7 @@ export default function AddArticle() {
           <button
             className="btn recipe-close-btn"
             onClick={() => setIsVisible(false)}
+            title="delete"
           >
             <i className="fas fa-times"></i>
           </button>
@@ -136,13 +143,18 @@ export default function AddArticle() {
           <button
             className="form-control addBlogBtn  mt-2 "
             onClick={handlePublish}
+            title="add Blog"
           >
             Add Blog
           </button>
         </div>
       ) : (
         <div className="fixed-bottom">
-          <button className="blogButton" onClick={() => setIsVisible(true)}>
+          <button
+            className="blogButton"
+            onClick={() => setIsVisible(true)}
+            title="create blog"
+          >
             Create Blog
           </button>
         </div>

@@ -14,18 +14,21 @@ const Footer = () => {
         <div className="footerElements">
           <ul className="footer__nav">
             <li>
-              <a href="https://x.com/quest_safari4">
+              <a href="https://x.com/quest_safari4" title="twitter">
                 <i className="fa-brands fa-square-x-twitter"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://www.linkedin.com/in/safari-quest-0b584830b/">
+              <a
+                href="https://www.linkedin.com/in/safari-quest-0b584830b/"
+                title="linked in"
+              >
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="mailto:safariquest4@gmail.com ">
+              <a href="mailto:safariquest4@gmail.com " title="mail">
                 <i className="fa-solid fa-envelope"></i>
               </a>
             </li>

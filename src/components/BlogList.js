@@ -26,12 +26,12 @@ function BlogList() {
             <div className="post">
               <div className="postHeader">
                 <div className="title">
-                  <h1>{post.title}</h1>
+                  <h3>{post.title}</h3>
                 </div>
 
                 <div className="deletePost">
                   {post.author.id === auth.currentUser.uid && (
-                    <button onClick={() => deletePost(post.id)}>
+                    <button onClick={() => deletePost(post.id)} title="delete">
                       <i className="fa-solid fa-trash"></i>
                     </button>
                   )}

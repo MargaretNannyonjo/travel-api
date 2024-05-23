@@ -45,7 +45,11 @@ const Recipes = () => {
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
             />
-            <button className="search-btn btn" onClick={getMealList}>
+            <button
+              className="search-btn btn"
+              onClick={getMealList}
+              title="search"
+            >
               search
             </button>
           </div>
@@ -62,6 +66,7 @@ const Recipes = () => {
                   <button
                     className="recipe-btn"
                     onClick={() => getMealRecipe(meal.idMeal)}
+                    title="get recipe"
                   >
                     Get Recipe
                   </button>
@@ -71,10 +76,11 @@ const Recipes = () => {
         </div>
 
         {showRecipe && selectedMeal && (
-          <div className="meal-details">
+          <div className="meal-details" style={{ marginTop: "6rem" }}>
             <button
               className="btn recipe-close-btn"
               onClick={() => setShowRecipe(false)}
+              title="delete"
             >
               <i className="fas fa-times"></i>
             </button>
@@ -86,13 +92,14 @@ const Recipes = () => {
                 <p>{selectedMeal.strInstructions}</p>
               </div>
               <div className="recipe-meal-img">
-                <img src={selectedMeal.strMealThumb} alt="" />
+                <img src={selectedMeal.strMealThumb} alt="meal" />
               </div>
               <div className="recipe-link">
                 <a
                   href={selectedMeal.strYoutube}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="watch video"
                 >
                   Watch Video
                 </a>

@@ -30,6 +30,7 @@ export default function Article() {
             <img
               src={article.imageUrl}
               alt={article.title}
+              title="blog image"
               style={{ width: "100%", padding: 10, height: "100%" }}
             />
           </div>

@@ -65,17 +65,17 @@ const Home = () => {
       </div>
 
       <div className="card-container">
-        <div class="card">
-          <div class="card__header">
-            <div class="card__picture">
-              <div class="card__picture-overlay">&nbsp;</div>
-              <img src={Zanibar} alt="Beach Hotel" class="card__picture-img" />
+        <div className="card">
+          <div className="card__header">
+            <div className="card__picture">
+              <div className="card__picture-overlay">&nbsp;</div>
+              <img src={Zanibar} alt="food" className="card__picture-img" />
             </div>
           </div>
 
-          <div class="card__details">
-            <h4 class="card__sub-heading">World Cuisine</h4>
-            <p class="card__text">
+          <div className="card__details">
+            <h4 className="card__sub-heading">World Cuisine</h4>
+            <p className="card__text">
               Experience a diverse array of culinary traditions and practices
               from various cultures around the globe.
             </p>
@@ -86,21 +86,21 @@ const Home = () => {
           </div>
         </div>
 
-        <div class="card">
-          <div class="card__header">
-            <div class="card__picture">
-              <div class="card__picture-overlay">&nbsp;</div>
+        <div className="card">
+          <div className="card__header">
+            <div className="card__picture">
+              <div className="card__picture-overlay">&nbsp;</div>
               <img
                 src={Serengeti}
-                alt="Yellowstone National Park"
-                class="card__picture-img"
+                alt="wild life"
+                className="card__picture-img"
               />
             </div>
           </div>
 
-          <div class="card__details">
-            <h4 class="card__sub-heading">Wild Life</h4>
-            <p class="card__text">
+          <div className="card__details">
+            <h4 className="card__sub-heading">Wild Life</h4>
+            <p className="card__text">
               An immersive and unforgettable experience for nature lovers and
               wildlife enthusiasts, appreciate the beauty and diversity of our
               planet's ecosystems.
@@ -112,21 +112,21 @@ const Home = () => {
           </div>
         </div>
 
-        <div class="card">
-          <div class="card__header">
-            <div class="card__picture">
-              <div class="card__picture-overlay">&nbsp;</div>
+        <div className="card">
+          <div className="card__header">
+            <div className="card__picture">
+              <div className="card__picture-overlay">&nbsp;</div>
               <img
                 src={Beaches}
-                alt="Yellowstone National Park"
-                class="card__picture-img"
+                alt="Beach Hotels"
+                className="card__picture-img"
               />
             </div>
           </div>
 
-          <div class="card__details">
-            <h4 class="card__sub-heading">Beach Hotels</h4>
-            <p class="card__text">
+          <div className="card__details">
+            <h4 className="card__sub-heading">Beach Hotels</h4>
+            <p className="card__text">
               Accommodations located along coastlines, offering guests easy
               access to the beach and scenic ocean views. These often feature
               amenities designed to enhance the seaside experience.

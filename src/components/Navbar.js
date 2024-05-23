@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/" title="home">
             <img src={Logo} alt="logo" className="logo" />
           </a>
           <button
@@ -30,30 +30,39 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/"
+                  title="home"
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/destination">
+                <Link
+                  className="nav-link"
+                  to="/destination"
+                  title="destination"
+                >
                   Destination guides
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/recipes">
+                <Link className="nav-link" to="/recipes" title="recipes">
                   Recipes
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/blog">
+                <Link className="nav-link" to="/blog" title="blog">
                   Blog
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact" title="contact">
                   Contact
                 </Link>
               </li>
@@ -104,6 +113,7 @@ const Navbar = () => {
                 onClick={() => {
                   signOut(auth);
                 }}
+                title="log out"
               >
                 LogOut
               </button>

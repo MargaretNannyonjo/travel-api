@@ -36,11 +36,18 @@ const Authentication = ({ setIsAuth }) => {
       <div className="user-auth">
         <form onSubmit={handleLogin}>
           <p>Sign Up with Google to continue</p>
-          <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          <button
+            className="login-with-google-btn"
+            onClick={signInWithGoogle}
+            title="sign up"
+          >
             Sign up with Google
           </button>
           <p>
-            You have an account? <Link to="/authentication">SignUp</Link>
+            You have an account?{" "}
+            <Link to="/authentication" title="sign up">
+              SignUp
+            </Link>
           </p>
         </form>
       </div>

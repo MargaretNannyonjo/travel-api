@@ -62,7 +62,7 @@ export default function Register() {
         />
       </div>
       <br />
-      <button className="addComment" onClick={handleSignUp}>
+      <button className="addComment" onClick={handleSignUp} title="register">
         Register
       </button>
     </div>

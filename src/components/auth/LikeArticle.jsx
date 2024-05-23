@@ -38,6 +38,7 @@ function LikeArticle({ id, likes }) {
           color: isLiked ? "red" : "black",
         }}
         onClick={handleLike}
+        title="like"
       />
     </div>
   );

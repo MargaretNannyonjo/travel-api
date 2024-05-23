@@ -42,7 +42,11 @@ const Authentication = ({ setIsAuth }) => {
         <p className="paragraph-top">Sign In with Google to continue</p>
 
         <div className="btn-container">
-          <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          <button
+            className="login-with-google-btn"
+            onClick={signInWithGoogle}
+            title="sign in"
+          >
             Sign in with Google
           </button>
         </div>

@@ -126,7 +126,11 @@ export default function Comment({ id }) {
                 onChange={(e) => setComment(e.target.value)}
                 onKeyUp={handleChangeComment}
               />
-              <button className="addComment" onClick={addComment}>
+              <button
+                className="addComment"
+                onClick={addComment}
+                title="add comment"
+              >
                 Add comment
               </button>
             </>

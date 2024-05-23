@@ -49,7 +49,7 @@ export default function LogIn() {
         />
 
         <br />
-        <button className="addComment" onClick={handleLogin}>
+        <button className="addComment" onClick={handleLogin} title="login">
           Log In
         </button>
       </div>

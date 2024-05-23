@@ -28,6 +28,7 @@ const DeleteArticle = ({ id, imageUrl }) => {
         className="bg-danger addComment"
         onClick={handleDelete}
         style={{ cursor: "pointer" }}
+        title="delete"
       >
         <i className="fa fa-times"></i>
       </button>
