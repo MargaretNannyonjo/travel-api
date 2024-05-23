@@ -49,7 +49,7 @@ export default function Articles() {
                     <img
                       src={imageUrl}
                       alt="title"
-                      style={{ height: "100%", width: "100%" }}
+                      style={{ height: "100px", width: "100%" }}
                     />
                   </Link>
                 </div>
