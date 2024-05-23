@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary  bg-light">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img src={Logo} alt="logo" className="logo" />
@@ -93,11 +93,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div>
+        <div className="authenticationRules">
           {user && (
             <>
-              <span className="pe-4">
-                Signed In as {user.displayName || user.email}
+              <span style={{ marginLeft: "10px", fontSize: "1.2rem" }}>
+                Logged In as: {user.displayName || user.email}
               </span>
               <button
                 className="me-3 logOutbtn"
@@ -105,7 +105,7 @@ const Navbar = () => {
                   signOut(auth);
                 }}
               >
-                Log out
+                LogOut
               </button>
             </>
           )}

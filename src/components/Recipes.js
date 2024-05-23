@@ -34,7 +34,7 @@ const Recipes = () => {
         <div className="meal-search">
           <h2 className="title">Find Meals For Your Ingredients</h2>
           <blockquote className="quote">
-            A good meal is love made visible.
+            <em>A good meal is love made visible.</em>
             <br />
           </blockquote>
           <div className="meal-search-box">
@@ -46,7 +46,7 @@ const Recipes = () => {
               onChange={(e) => setSearchInput(e.target.value)}
             />
             <button className="search-btn btn" onClick={getMealList}>
-              <i className="fas fa-search"></i>
+              search
             </button>
           </div>
         </div>

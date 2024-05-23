@@ -74,10 +74,10 @@ const Home = () => {
           </div>
 
           <div class="card__details">
-            <h4 class="card__sub-heading">Beach Hotels</h4>
+            <h4 class="card__sub-heading">World Cuisine</h4>
             <p class="card__text">
-              Offers direct access to beautiful sandy beaches and stunning ocean
-              views.
+              Experience a diverse array of culinary traditions and practices
+              from various cultures around the globe.
             </p>
 
             <img className="pin" src={Pin} alt="pin" />
@@ -125,10 +125,11 @@ const Home = () => {
           </div>
 
           <div class="card__details">
-            <h4 class="card__sub-heading">Beaches</h4>
+            <h4 class="card__sub-heading">Beach Hotels</h4>
             <p class="card__text">
-              The first national park in the world and renowned for its natural
-              beauty, geothermal features, and diverse wildlife.
+              Accommodations located along coastlines, offering guests easy
+              access to the beach and scenic ocean views. These often feature
+              amenities designed to enhance the seaside experience.
             </p>
 
             <img className="pin" src={Pin} alt="pin" />

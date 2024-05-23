@@ -22,7 +22,7 @@ export default function Articles() {
       console.log(articlesList); // Log the entire list of articles
     });
 
-    return () => unsubscribe(); // Clean up the listener on unmount
+    return () => unsubscribe();
   }, []);
 
   return (
@@ -43,13 +43,13 @@ export default function Articles() {
             comments,
           }) => (
             <div className="border mt-3 p-3 bg-light" key={id}>
-              <div className="row">
-                <div className="col-3">
+              <div className="row ">
+                <div className="col-3 articleImage">
                   <Link to={`/article/${id}`}>
                     <img
                       src={imageUrl}
                       alt="title"
-                      style={{ height: 180, width: 180 }}
+                      style={{ height: "100%", width: "100%" }}
                     />
                   </Link>
                 </div>
@@ -59,7 +59,7 @@ export default function Articles() {
                     <div className="col-6">
                       {createdBy && <span>Posted by: @{createdBy}</span>}
                     </div>
-                    <div className="col-6 d-flex flex-row-reverse">
+                    <div className="col-6 d-flex flex-row-reverse mt-0 p-0">
                       {user && userId && (
                         <DeleteArticle id={id} imageUrl={imageUrl} />
                       )}

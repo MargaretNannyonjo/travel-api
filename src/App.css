@@ -397,14 +397,33 @@ body {
 }
 
 .logIn {
-  margin-top: 2rem;
+  margin-top: 7.5rem;
+}
+
+.addBlogArticle {
+  width: 40%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  margin-left: 20px;
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+.addBlogBtn {
+  background-color: #1c8665;
+  color: white;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .blogPage {
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-top: 2rem;
+  width: 100%;
 
   h1 {
     padding-top: 2rem;
@@ -581,9 +600,9 @@ body {
 
 /* RECIPE PAGE */
 
-/* .recipe-container {
+.recipe-container {
   margin-top: 6rem;
-} */
+}
 
 .btn {
   font-family: inherit;
@@ -597,12 +616,12 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 
 .quote {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -619,7 +638,7 @@ body {
 }
 
 .meal-search {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .meal-search-box {
@@ -635,11 +654,12 @@ body {
 
 .search-control {
   padding: 0 1rem;
-  font-size: 1.4rem;
-  border: 1px solid var(--tenne--tawny);
+  font-size: 1.2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--tenne--tawny);
   color: var(--tenne--tawny);
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
 }
 
 .search-control::placeholder {
@@ -647,15 +667,13 @@ body {
 }
 
 .search-btn {
-  width: 40px;
-  height: 40px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background: var(--tenne--tawny);
   color: #fff;
   border: none;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  width: 60px;
   transition: all 0.4s linear;
+  padding: 5px;
 }
 
 .search-btn:hover {
@@ -989,5 +1007,22 @@ button:hover {
 }
 
 .articlesData {
-  margin-left: 10px;
+  width: 75%;
+}
+
+.articleImage {
+  width: 20%;
+}
+
+.blogButton {
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.authenticationRules {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }

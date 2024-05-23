@@ -35,13 +35,19 @@ export default function Comment({ id }) {
   }, [id]);
 
   const handleChangeComment = async (e) => {
-    if (e.key === "Enter" && currentlyLoggedinUser) {
+    if (e.key === "Enter") {
+      await addComment();
+    }
+  };
+
+  const addComment = async () => {
+    if (currentlyLoggedinUser && comment.trim()) {
       try {
         await updateDoc(doc(db, "Articles", id), {
           comments: arrayUnion({
             user: currentlyLoggedinUser.uid,
             userName: currentlyLoggedinUser.displayName,
-            comment: comment,
+            comment: comment.trim(),
             createdAt: new Date(),
             commentId: uuidv4(),
           }),
@@ -87,7 +93,7 @@ export default function Comment({ id }) {
                     <div className="col-1 ">
                       {user === currentlyLoggedinUser?.uid && (
                         <button
-                          className=" trash bg-danger"
+                          className="trash bg-danger"
                           onClick={() =>
                             handleDeleteComment({
                               commentId,
@@ -98,7 +104,7 @@ export default function Comment({ id }) {
                             })
                           }
                         >
-                          delete
+                          <i className="fa fa-times "></i>
                         </button>
                       )}
                     </div>
@@ -111,18 +117,20 @@ export default function Comment({ id }) {
           )}
 
           {currentlyLoggedinUser && (
-            <input
-              type="text"
-              className="form-control mt-4 formInput"
-              placeholder="Add comment"
-              value={comment}
-              onChange={(e) => setComment(e.target.value)}
-              onKeyUp={(e) => handleChangeComment(e)}
-            />
+            <>
+              <input
+                type="text"
+                className="form-control mt-4 formInput"
+                placeholder="Add comment"
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
+                onKeyUp={handleChangeComment}
+              />
+              <button className="addComment" onClick={addComment}>
+                Add comment
+              </button>
+            </>
           )}
-          <button className="addComment" onClick={handleChangeComment}>
-            Add comment
-          </button>
         </div>
       </div>
     </>

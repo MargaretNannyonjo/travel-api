@@ -29,7 +29,7 @@ const DeleteArticle = ({ id, imageUrl }) => {
         onClick={handleDelete}
         style={{ cursor: "pointer" }}
       >
-        Delete post
+        <i className="fa fa-times"></i>
       </button>
     </div>
   );

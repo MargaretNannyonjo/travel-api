@@ -23,14 +23,14 @@ export default function Article() {
   }, [id]);
 
   return (
-    <div className="container " style={{ height: "auto" }}>
+    <div className="container " style={{ height: "auto", marginTop: "10rem" }}>
       {article && (
         <div className="row">
           <div className="col-3">
             <img
               src={article.imageUrl}
               alt={article.title}
-              style={{ width: "100%", padding: 10, height: "300px" }}
+              style={{ width: "100%", padding: 10, height: "100%" }}
             />
           </div>
           <div className="col-9 mt-3">
