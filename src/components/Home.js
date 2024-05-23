@@ -39,8 +39,11 @@ const Home = () => {
         </p>
 
         <p className="blog">
-          Don't forget to check out our <a href="/blog">blog</a> page to share
-          your travel and food experiences with others!{" "}
+          Don't forget to check out our
+          <a href="/blog" title="blog">
+            blog
+          </a>
+          page to share your travel and food experiences with others!{" "}
         </p>
       </div>
 

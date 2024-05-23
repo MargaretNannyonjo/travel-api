@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/" title="home">
+          <a className="navbar-brand" href="/" title="safari">
             <img src={Logo} alt="logo" className="logo" />
           </a>
           <button
