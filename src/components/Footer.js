@@ -14,30 +14,25 @@ const Footer = () => {
         <div className="footerElements">
           <ul className="footer__nav">
             <li>
-              <a href="https://twitter.com/Leaney27">
+              <a href="https://x.com/quest_safari4">
                 <i className="fa-brands fa-square-x-twitter"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://twitter.com/Leaney27">
+              <a href="https://www.linkedin.com/in/safari-quest-0b584830b/">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="mailto:questsafari43@gmail.com ">
+              <a href="mailto:safariquest4@gmail.com ">
                 <i className="fa-solid fa-envelope"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Leaney27">
-                <i className="fa-brands fa-square-facebook"></i>
               </a>
             </li>
           </ul>
 
           <p className="footer-paragraph">
-            Email Address: questsafari43@gmail.com{" "}
+            Email Address: safariquest4@gmail.com
           </p>
         </div>
       </div>
