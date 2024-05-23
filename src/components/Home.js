@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="homePage">
-        <h2>SAFARI QUEST</h2>
+        <h4>SAFARI QUEST</h4>
         <h1>
           WHERE TASTE <br />
           MEETS <br />
@@ -21,7 +21,7 @@ const Home = () => {
       </div>
 
       <div className="content">
-        <h4>Welcome to Food and Travel Adventures!</h4>
+        <h2>Welcome to Food and Travel Adventures!</h2>
 
         <p>
           Embark on a culinary journey around the globe and discover the
@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       <div className="popular">
-        <h3>Popular Destinations</h3>
+        <h2>Popular Destinations</h2>
         <div className="pDests">
           <div className="destDetails">
             <h2>Victoria Falls </h2>
