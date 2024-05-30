@@ -144,10 +144,10 @@ body {
   }
 
   @media (max-width: 600px) {
-    h1 {
+    h4 {
       top: 0;
     }
-    h6 {
+    h1 {
       font-size: 3rem;
 
       font-weight: bold;

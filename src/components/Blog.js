@@ -9,6 +9,11 @@ export default function Blog() {
         className="container"
         style={{ marginTop: "6rem", height: "auto", width: "80%" }}
       >
+        <h5
+          style={{ textAlign: "center", marginTop: "7rem", fontSize: "1.6rem" }}
+        >
+          Tales from the Road : Journey Journals
+        </h5>
         <AddArticle />
         <div className="row">
           <div className="col-md-12">

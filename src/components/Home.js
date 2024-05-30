@@ -38,16 +38,18 @@ const Home = () => {
         </p>
 
         <p className="blog">
-          Don't forget to check out our
+          Don't forget to check out our {""}
           <a href="/blog" title="blog">
             blog
           </a>
-          page to share your travel and food experiences with others!{" "}
+          {""} page to share your travel and food experiences with others!{" "}
         </p>
       </div>
 
       <div className="popular">
-        <h2>Popular Destinations</h2>
+        <h2 style={{ color: "green", textAlign: "center" }}>
+          Popular Destinations
+        </h2>
         <div className="pDests">
           <div className="destDetails">
             <h2>Victoria Falls </h2>

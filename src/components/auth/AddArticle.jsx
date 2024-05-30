@@ -86,9 +86,9 @@ export default function AddArticle() {
             <Link to="/login" title="login">
               Login
             </Link>
-            to post a Blog
+            {""} to post a Blog
           </h5>
-          Don't have an account?
+          Don't have an account? {""}
           <Link to="/register" title="register">
             Signup
           </Link>
