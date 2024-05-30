@@ -1,5 +1,4 @@
 import React from "react";
-
 import Pin from "../img/pin.png";
 import Zanibar from "../img/zanzibar.jpeg";
 import Serengeti from "../img/serengeti.jpeg";

@@ -119,7 +119,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 
-  h1 {
+  h4 {
     color: white;
     padding-left: 10px;
     text-align: left;
@@ -127,7 +127,7 @@ body {
     padding-top: 20px;
   }
 
-  h6 {
+  h1 {
     text-align: center;
     font-size: 4rem;
     color: #f1e3c0;
